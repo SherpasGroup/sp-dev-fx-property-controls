@@ -447,6 +447,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -978,11 +990,11 @@ It also allows the user to create a new folder at the current level being explor
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your webpart:</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">IFolder</span><span class="p">,</span> <span class="nx">IPropertyFieldFolderPickerProps</span> <span class="p">,</span> <span class="nx">PropertyFieldFolderPicker</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@pnp/spfx-property-controls/lib/PropertyFieldFolderPicker&quot;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">IFolder</span><span class="p">,</span> <span class="nx">IPropertyFieldFolderPickerProps</span> <span class="p">,</span> <span class="nx">PropertyFieldFolderPicker</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&quot;@pnp/spfx-property-controls/lib/PropertyFieldFolderPicker&quot;</span><span class="p">;</span>
 </code></pre></div>
 
 <p>Create a new property for your web part, for example:</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span> <span class="kd">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
   <span class="nx">folderPicker</span>: <span class="kt">IFolder</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>

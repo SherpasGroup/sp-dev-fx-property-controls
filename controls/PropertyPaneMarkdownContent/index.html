@@ -451,6 +451,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -1149,13 +1161,13 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your component: </li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">PropertyPaneMarkdownContent</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyPaneMarkdownContent&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyPaneMarkdownContent</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyPaneMarkdownContent&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ol>
 <li>Create a string with Markdown content for your property pane, for example:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">md</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`</span>
+<div class="codehilite"><pre><span></span><code><span class="kd">const</span> <span class="nx">md</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`</span>
 <span class="sb">### This is Markdown</span>
 
 <span class="sb">[Markdown](http://daringfireball.net/projects/markdown/) lets you write content in a really natural way.</span>
@@ -1186,7 +1198,7 @@
 
 <h3 id="indentation">Indentation<a class="headerlink" href="#indentation" title="Permanent link">&para;</a></h3>
 <p>Pay close attention to the indentation in your Markdown string. The Markdown parser assumes that four spaces preceding your content means a code block. This means that the following Markdown will render most of the content a code block:</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">md</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`</span>
+<div class="codehilite"><pre><span></span><code><span class="kd">const</span> <span class="nx">md</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`</span>
 <span class="sb">    To get started select an items from the library.</span>
 
 <span class="sb">    You can pick any items from the list, provided that is has a valid \`id\` attribute.`</span>
@@ -1195,7 +1207,7 @@
 <p>Producing the following HTML:</p>
 <p><img alt="Bad Markdown" src="../../assets/badmarkdown.png" /></p>
 <p>To solve this issue, make sure that your content is not indented.</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">const</span> <span class="nx">md</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`To get started select an items from the library.</span>
+<div class="codehilite"><pre><span></span><code><span class="kd">const</span> <span class="nx">md</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`To get started select an items from the library.</span>
 
 <span class="sb">You can pick any items from the list, provided that is has a valid \`id\` attribute.`</span>
 </code></pre></div>
@@ -1224,7 +1236,7 @@
 
 <p>You can also render your own React elements using the <code>overrides</code> prop. For example, if you have a <code>MyCustomControl</code> React element, you can use the following:</p>
 <div class="codehilite"><pre><span></span><code><span class="c1">// Import your React element</span>
-<span class="kr">import</span> <span class="nx">MyCustomControl</span> <span class="nx">from</span> <span class="s1">&#39;MyCustomControl&#39;</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">MyCustomControl</span> <span class="nx">from</span> <span class="s1">&#39;MyCustomControl&#39;</span><span class="p">;</span>
 
 <span class="p">...</span>
 

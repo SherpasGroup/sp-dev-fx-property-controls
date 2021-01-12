@@ -449,6 +449,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../controls/PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../controls/PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -1023,7 +1035,7 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your main web part TypeScript file:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">PropertyPaneHelpers</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/helpers&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyPaneHelpers</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/helpers&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ol>
@@ -1032,7 +1044,7 @@
 <div class="codehilite"><pre><span></span><code><span class="cm">/**</span>
 <span class="cm"> * Load property pane resources</span>
 <span class="cm"> */</span>
-<span class="kr">protected</span> <span class="nx">async</span> <span class="nx">loadPropertyPaneResources</span><span class="p">()</span><span class="o">:</span> <span class="nx">Promise</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="p">{</span>
+<span class="k">protected</span> <span class="k">async</span> <span class="nx">loadPropertyPaneResources</span><span class="p">()</span><span class="o">:</span> <span class="nx">Promise</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="nx">PropertyPaneHelpers</span><span class="p">.</span><span class="nx">setSpinner</span><span class="p">({</span>
     <span class="nx">bgColor</span><span class="o">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
     <span class="nx">spinnerProps</span><span class="o">:</span> <span class="p">{</span>
@@ -1049,7 +1061,7 @@
 
   <span class="c1">// Write here the code you want to add to load your resources</span>
 
-  <span class="nx">PropertyPaneHelpers</span><span class="p">.</span><span class="nx">clearSpinner</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+  <span class="nx">PropertyPaneHelpers</span><span class="p">.</span><span class="nx">clearSpinner</span><span class="p">(</span><span class="mf">200</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 

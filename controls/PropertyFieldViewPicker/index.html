@@ -451,6 +451,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -1025,13 +1037,13 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your component:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">PropertyFieldViewPicker</span><span class="p">,</span> <span class="nx">PropertyFieldViewPickerOrderBy</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldViewPicker&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyFieldViewPicker</span><span class="p">,</span> <span class="nx">PropertyFieldViewPickerOrderBy</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldViewPicker&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ol>
 <li>You'll probably want to use this control in combination with the <a href="../PropertyFieldListPicker/">PropertyFieldListPicker</a>. Make sure to select the <code>multiSelect</code> prop to <code>false</code>, as this control is designed to work with a single list. Store the list id in your web part properties, as follows:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span> <span class="kd">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
   <span class="nx">list</span>: <span class="kt">string</span><span class="p">;</span> <span class="c1">// Stores the list ID</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1039,7 +1051,7 @@
 <ol>
 <li>Create a new property for your web part, as indicated between the <code>BEGIN:</code> and <code>END:</code> comments below:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span> <span class="kd">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
   <span class="nx">list</span>: <span class="kt">string</span><span class="p">;</span> <span class="c1">// Stores the list ID</span>
 
   <span class="c1">// BEGIN: Added</span>

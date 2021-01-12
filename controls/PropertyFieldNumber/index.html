@@ -451,6 +451,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -1025,13 +1037,13 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your component:</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">PropertyFieldNumber</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldNumber&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyFieldNumber</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldNumber&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ul>
 <li>Create a new property for your web part, for example:</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span> <span class="kd">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
   <span class="nx">numberValue</span>: <span class="kt">number</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1062,7 +1074,7 @@
   <span class="nx">minValue</span>: <span class="kt">1</span><span class="p">,</span>
   <span class="nx">disabled</span>: <span class="kt">false</span><span class="p">,</span>
   <span class="nx">onGetErrorMessage</span><span class="o">:</span> <span class="p">(</span><span class="nx">value</span>: <span class="kt">number</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="o">%</span> <span class="mf">2</span> <span class="o">!==</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
       <span class="k">return</span> <span class="s1">&#39;Only even numbers are allowed&#39;</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>

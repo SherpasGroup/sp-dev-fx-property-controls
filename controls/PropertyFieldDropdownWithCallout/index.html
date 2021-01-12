@@ -449,6 +449,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -1027,14 +1039,14 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your component:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">CalloutTriggers</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldHeader&#39;</span><span class="p">;</span>
-<span class="kr">import</span> <span class="p">{</span> <span class="nx">PropertyFieldDropdownWithCallout</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldDropdownWithCallout&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">CalloutTriggers</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldHeader&#39;</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyFieldDropdownWithCallout</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldDropdownWithCallout&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ol>
 <li>Create a new property for your web part, for example:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span> <span class="kd">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
   <span class="nx">dropdownInfoHeaderKey</span>: <span class="kt">string</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1067,8 +1079,8 @@
 <ol>
 <li>Implement the <code>calloutContent</code> function as follows:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">private</span> <span class="nx">getDropdownInfoHeaderCalloutContent</span><span class="p">()</span><span class="o">:</span> <span class="nx">JSX</span><span class="p">.</span><span class="nx">Element</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="nx">selectedKey</span>: <span class="kt">string</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">dropdownInfoHeaderKey</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">private</span> <span class="nx">getDropdownInfoHeaderCalloutContent</span><span class="p">()</span><span class="o">:</span> <span class="nx">JSX</span><span class="p">.</span><span class="nx">Element</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">selectedKey</span>: <span class="kt">string</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">dropdownInfoHeaderKey</span><span class="p">;</span>
 
   <span class="k">if</span> <span class="p">(</span><span class="nx">selectedKey</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="sb">`you have selected </span><span class="si">${</span><span class="nx">selectedKey</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>

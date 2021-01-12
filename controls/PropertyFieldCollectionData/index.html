@@ -509,6 +509,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -1059,13 +1071,13 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your component:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">PropertyFieldCollectionData</span><span class="p">,</span> <span class="nx">CustomCollectionFieldType</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldCollectionData&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyFieldCollectionData</span><span class="p">,</span> <span class="nx">CustomCollectionFieldType</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldCollectionData&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ol>
 <li>Create a new property for your web part, for example:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span> <span class="kd">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
   <span class="nx">collectionData</span>: <span class="kt">any</span><span class="p">[];</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1083,24 +1095,24 @@
     <span class="p">{</span>
       <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;Title&quot;</span><span class="p">,</span>
       <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Firstname&quot;</span><span class="p">,</span>
-      <span class="nx">type</span>: <span class="kt">CustomCollectionFieldType.string</span><span class="p">,</span>
+      <span class="kd">type</span><span class="o">:</span> <span class="nx">CustomCollectionFieldType</span><span class="p">.</span><span class="kt">string</span><span class="p">,</span>
       <span class="nx">required</span>: <span class="kt">true</span>
     <span class="p">},</span>
     <span class="p">{</span>
       <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;Lastname&quot;</span><span class="p">,</span>
       <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Lastname&quot;</span><span class="p">,</span>
-      <span class="nx">type</span>: <span class="kt">CustomCollectionFieldType.string</span>
+      <span class="kd">type</span><span class="o">:</span> <span class="nx">CustomCollectionFieldType</span><span class="p">.</span><span class="kt">string</span>
     <span class="p">},</span>
     <span class="p">{</span>
       <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;Age&quot;</span><span class="p">,</span>
       <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Age&quot;</span><span class="p">,</span>
-      <span class="nx">type</span>: <span class="kt">CustomCollectionFieldType.number</span><span class="p">,</span>
+      <span class="kd">type</span><span class="o">:</span> <span class="nx">CustomCollectionFieldType</span><span class="p">.</span><span class="kt">number</span><span class="p">,</span>
       <span class="nx">required</span>: <span class="kt">true</span>
     <span class="p">},</span>
     <span class="p">{</span>
       <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;City&quot;</span><span class="p">,</span>
       <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Favorite city&quot;</span><span class="p">,</span>
-      <span class="nx">type</span>: <span class="kt">CustomCollectionFieldType.dropdown</span><span class="p">,</span>
+      <span class="kd">type</span><span class="o">:</span> <span class="nx">CustomCollectionFieldType</span><span class="p">.</span><span class="nx">dropdown</span><span class="p">,</span>
       <span class="nx">options</span><span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
           <span class="nx">key</span><span class="o">:</span> <span class="s2">&quot;antwerp&quot;</span><span class="p">,</span>
@@ -1120,7 +1132,7 @@
     <span class="p">{</span>
       <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;Sign&quot;</span><span class="p">,</span>
       <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Signed&quot;</span><span class="p">,</span>
-      <span class="nx">type</span>: <span class="kt">CustomCollectionFieldType.boolean</span>
+      <span class="kd">type</span><span class="o">:</span> <span class="nx">CustomCollectionFieldType</span><span class="p">.</span><span class="kr">boolean</span>
     <span class="p">}</span>
   <span class="p">],</span>
   <span class="nx">disabled</span>: <span class="kt">false</span>
@@ -1132,7 +1144,7 @@
 <div class="codehilite"><pre><span></span><code><span class="p">{</span>
   <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;customFieldId&quot;</span><span class="p">,</span>
   <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Custom Field&quot;</span><span class="p">,</span>
-  <span class="nx">type</span>: <span class="kt">CustomCollectionFieldType.custom</span><span class="p">,</span>
+  <span class="kd">type</span><span class="o">:</span> <span class="nx">CustomCollectionFieldType</span><span class="p">.</span><span class="nx">custom</span><span class="p">,</span>
   <span class="nx">onCustomRender</span><span class="o">:</span> <span class="p">(</span><span class="nx">field</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">onUpdate</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">itemId</span><span class="p">,</span> <span class="nx">onError</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">(</span>
       <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span>

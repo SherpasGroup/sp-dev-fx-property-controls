@@ -449,6 +449,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -1028,13 +1040,13 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your component:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="p">{</span> <span class="nx">PropertyFieldListPicker</span><span class="p">,</span> <span class="nx">PropertyFieldListPickerOrderBy</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldListPicker&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyFieldListPicker</span><span class="p">,</span> <span class="nx">PropertyFieldListPickerOrderBy</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldListPicker&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ol>
 <li>Create a new property for your web part, for example:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span> <span class="kd">interface</span> <span class="nx">IPropertyControlsTestWebPartProps</span> <span class="p">{</span>
   <span class="nx">lists</span>: <span class="kt">string</span> <span class="o">|</span> <span class="kt">string</span><span class="p">[];</span> <span class="c1">// Stores the list ID(s)</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1089,7 +1101,7 @@
 </tr>
 <tr>
 <td>selectedList</td>
-<td>string OR string[]</td>
+<td>string | string[] | IPropertyFieldList | IPropertyFieldList[]</td>
 <td>no</td>
 <td>Initial selected list set of the control.</td>
 </tr>
@@ -1189,8 +1201,19 @@
 <td>no</td>
 <td>Callback that is called before the dropdown is populated.</td>
 </tr>
+<tr>
+<td>includeListTitleAndUrl</td>
+<td>boolean</td>
+<td>no</td>
+<td>Specifies if the picker returns list id, title and url as an object instead on id.</td>
+</tr>
 </tbody>
 </table>
+<p>Interface <code>IPropertyFieldList</code></p>
+<p>| Property | Type | Required | Description |
+| id | string | yes | The ID of the list |
+| title | string | no | List's title |
+| url | string | no | List's server relative url |</p>
 <p>Enum <code>PropertyFieldListPickerOrderBy</code></p>
 <table>
 <thead>
@@ -1231,7 +1254,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../PropertyFieldGuid/" title="PropertyFieldGuidPicker" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1240,7 +1263,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                PropertyFieldGuidPicker
+                PropertyFieldIconPicker
               </span>
             </div>
           </a>

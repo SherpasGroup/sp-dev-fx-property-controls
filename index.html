@@ -519,6 +519,18 @@
 
 
   <li class="md-nav__item">
+    <a href="controls/PropertyFieldIconPicker/" title="PropertyFieldIconPicker" class="md-nav__link">
+      PropertyFieldIconPicker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="controls/PropertyFieldListPicker/" title="PropertyFieldListPicker" class="md-nav__link">
       PropertyFieldListPicker
     </a>
@@ -1074,7 +1086,7 @@
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p><code>v2</code> version of the controls project has a minimal dependency on SharePoint Framework version <code>1.11.0</code>. <code>v1</code> has a minimal dependency on SharePoint Framework version <code>1.3.0</code>. Be aware that the controls might not work in solutions your building for on-premises. As for on-premises solutions version <code>1.1.0</code> will get used.</p>
+<p><code>v2</code> version of the controls project has a minimal dependency on SharePoint Framework version <code>1.11.0</code>. <code>v1</code> has a minimal dependency on SharePoint Framework version <code>1.3.0</code>. Be aware that the controls might not work in solutions you're building for on-premises. As for on-premises solutions version <code>1.1.0</code> will get used.</p>
 </div>
 <h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
@@ -1089,7 +1101,7 @@
 <p>Since <code>v1.7.0</code> the localized resource path will automatically be configured during the dependency installing.</p>
 </div>
 <p>Once the package is installed, you will have to configure the resource file of the property controls to be used in your project. You can do this by opening the <code>config/config.json</code> and adding the following line to the <code>localizedResources</code> property:</p>
-<div class="codehilite"><pre><span></span><code><span class="s2">&quot;PropertyControlStrings&quot;</span><span class="err">:</span> <span class="s2">&quot;node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js&quot;</span>
+<div class="codehilite"><pre><span></span><code><span class="nt">&quot;PropertyControlStrings&quot;</span><span class="p">:</span> <span class="s2">&quot;node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js&quot;</span>
 </code></pre></div>
 
 <h2 id="telemetry">Telemetry<a class="headerlink" href="#telemetry" title="Permanent link">&para;</a></h2>
@@ -1098,9 +1110,9 @@
 <p>More information about the service that we are using for this can be found here: <a href="https://github.com/pnp/telemetry-proxy-node">PnP Telemetry Proxy</a>.</p>
 </blockquote>
 <p>Since version <code>1.17.0</code> it is possible to opt-out of the telemetry by adding the following code to your web part:</p>
-<div class="codehilite"><pre><span></span><code><span class="kr">import</span> <span class="nx">PnPTelemetry</span> <span class="nx">from</span> <span class="s2">&quot;@pnp/telemetry-js&quot;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="nx">PnPTelemetry</span> <span class="nx">from</span> <span class="s2">&quot;@pnp/telemetry-js&quot;</span><span class="p">;</span>
 <span class="p">...</span>
-<span class="kr">const</span> <span class="nx">telemetry</span> <span class="o">=</span> <span class="nx">PnPTelemetry</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">telemetry</span> <span class="o">=</span> <span class="nx">PnPTelemetry</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">();</span>
 <span class="nx">telemetry</span><span class="p">.</span><span class="nx">optOut</span><span class="p">();</span>
 </code></pre></div>
 
@@ -1114,6 +1126,7 @@
 <li><a href="./controls/PropertyFieldFilePicker">PropertyFieldFilePicker</a> (Property pane file picker)</li>
 <li><a href="./controls/PropertyFieldFolderPicker">PropertyFieldFolderPicker</a> (Property pane folder picker)</li>
 <li><a href="./controls/PropertyFieldGuid">PropertyFieldGuid</a> (Property pane GUID editor)</li>
+<li><a href="./controls/PropertyFieldIconPicker">PropertyFieldIconPicker</a> (Property pane icon picker)</li>
 <li><a href="./controls/PropertyFieldListPicker">PropertyFieldListPicker</a> (Property pane list selector)</li>
 <li><a href="./controls/PropertyFieldMessage">PropertyFieldMessage</a> (Property pane message)</li>
 <li><a href="./controls/PropertyFieldMultiSelect">PropertyFieldMultiSelect</a> (Property pane multi select dropdown)</li>

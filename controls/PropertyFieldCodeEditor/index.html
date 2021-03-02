@@ -1061,7 +1061,12 @@
   <span class="nx">properties</span>: <span class="kt">this.properties</span><span class="p">,</span>
   <span class="nx">disabled</span>: <span class="kt">false</span><span class="p">,</span>
   <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;codeEditorFieldId&#39;</span><span class="p">,</span>
-  <span class="nx">language</span>: <span class="kt">PropertyFieldCodeEditorLanguages.HTML</span>
+  <span class="nx">language</span>: <span class="kt">PropertyFieldCodeEditorLanguages.HTML</span><span class="p">,</span>
+  <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">wrap</span>: <span class="kt">true</span><span class="p">,</span>
+    <span class="nx">fontSize</span>: <span class="kt">20</span><span class="p">,</span>
+    <span class="c1">// more options</span>
+  <span class="p">}</span>
 <span class="p">})</span>
 </code></pre></div>
 
@@ -1124,6 +1129,12 @@
 <td>string</td>
 <td>yes</td>
 <td>An unique key that indicates the identity of this control.</td>
+</tr>
+<tr>
+<td>options</td>
+<td>AceOptions</td>
+<td>no</td>
+<td><a href="https://github.com/ajaxorg/ace/wiki/Configuring-Ace">Additional properties</a> available to the Ace editor.</td>
 </tr>
 </tbody>
 </table>

@@ -1265,11 +1265,11 @@
 <h3 id="rendering-all-elements-as-inline-or-block-elements">Rendering all elements as inline or block elements<a class="headerlink" href="#rendering-all-elements-as-inline-or-block-elements" title="Permanent link">&para;</a></h3>
 <p>By default, the control will attempt to determine whether the Markdown content should be wrapped in a <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, or <code>&lt;span&gt;</code> to render content as block or inline elements.</p>
 <p>For example, the following Markdown will be rendered as inline content:</p>
-<div class="codehilite"><pre><span></span><code>This is an _inline_ element
+<div class="codehilite"><pre><span></span><code>This is an <span class="ge">_inline_</span> element
 </code></pre></div>
 
 <p>And the following Markdown will be rendered as block content:</p>
-<div class="codehilite"><pre><span></span><code>## This is a block element
+<div class="codehilite"><pre><span></span><code><span class="gu">## This is a block element</span>
 </code></pre></div>
 
 <p>However, you can override rendering all HTML as block elements or inline elements by passing <code>forceBlock: true</code> or <code>forceInline: true</code> to the component's <code>options</code> prop.</p>

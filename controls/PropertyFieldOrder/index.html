@@ -1103,7 +1103,7 @@
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
 <li>Import the following modules to your component:</li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyFieldOrder</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldOrder&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyFieldOrder</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/PropertyFieldOrder&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <ol>
@@ -1155,7 +1155,7 @@
 <h3 id="custom-rendering">Custom Rendering<a class="headerlink" href="#custom-rendering" title="Permanent link">&para;</a></h3>
 <p>You can fully customize how items are rendered by providing the <code>onRenderItem</code> callback function and returning whatever <code>JSX.Element</code> you want.</p>
 <p>For example, you can define your function in a <em>tsx</em> file like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">React</span> <span class="k">from</span> <span class="s1">&#39;react&#39;</span><span class="p">;</span>
 
 <span class="k">export</span> <span class="kd">const</span> <span class="nx">orderedItem</span> <span class="o">=</span> <span class="p">(</span><span class="nx">item</span>:<span class="kt">any</span><span class="p">,</span> <span class="nx">index</span>:<span class="kt">number</span><span class="p">)</span><span class="o">:</span> <span class="nx">JSX</span><span class="p">.</span><span class="nx">Element</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">(</span>
@@ -1168,7 +1168,7 @@
 </code></pre></div>
 
 <p>You can then import this function into your webpart using the relative path to this file similar to the following:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">orderedItem</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./components/OrderedItem&#39;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">orderedItem</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;./components/OrderedItem&#39;</span><span class="p">;</span>
 </code></pre></div>
 
 <p>Then you can simply reference it in your <code>PropertyFieldOrder</code>:</p>

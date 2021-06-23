@@ -1045,6 +1045,7 @@
 <p>The control automatically retrieves the columns for a given SharePoint list:</p>
 <p><img alt="Single Column picker" src="../assets/singleColumnPicker.png" /></p>
 <p><img alt="MultiColumn picker" src="../assets/multiColumnPicker.png" /></p>
+<p><img alt="MultiColumn picker - Multiselect Dropdown" src="../assets/multicolumnpicker-dropdown.png" /></p>
 <h2 id="how-to-use-this-control-in-your-solutions">How to use this control in your solutions<a class="headerlink" href="#how-to-use-this-control-in-your-solutions" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
@@ -1114,6 +1115,25 @@
     <span class="nx">columnReturnProperty</span>: <span class="kt">IColumnReturnProperty.Title</span><span class="p">,</span>
     <span class="nx">multiSelect</span>: <span class="kt">true</span>
 <span class="p">})</span>
+
+<span class="c1">// Multi column selection returning the &#39;Title&#39; of the selected columns as a multi-select dropdown</span>
+<span class="nx">PropertyFieldColumnPicker</span><span class="p">(</span><span class="s1">&#39;multiColumn&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Select columns&#39;</span><span class="p">,</span>
+    <span class="nx">context</span>: <span class="kt">this.context</span><span class="p">,</span>
+    <span class="nx">selectedColumn</span>: <span class="kt">this.properties.multiColumn</span><span class="p">,</span>
+    <span class="nx">listId</span>: <span class="kt">this.properties.singleListFiltered</span><span class="p">,</span>
+    <span class="nx">disabled</span>: <span class="kt">false</span><span class="p">,</span>
+    <span class="nx">orderBy</span>: <span class="kt">PropertyFieldColumnPickerOrderBy.Title</span><span class="p">,</span>
+    <span class="nx">onPropertyChange</span>: <span class="kt">this.onPropertyPaneFieldChanged.bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+    <span class="nx">properties</span>: <span class="kt">this.properties</span><span class="p">,</span>
+    <span class="nx">onGetErrorMessage</span>: <span class="kt">null</span><span class="p">,</span>
+    <span class="nx">deferredValidationTime</span>: <span class="kt">0</span><span class="p">,</span>
+    <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;multiColumnPickerFieldId&#39;</span><span class="p">,</span>
+    <span class="nx">displayHiddenColumns</span>: <span class="kt">false</span><span class="p">,</span>
+    <span class="nx">columnReturnProperty</span>: <span class="kt">IColumnReturnProperty.Title</span><span class="p">,</span>
+    <span class="nx">multiSelect</span>: <span class="kt">true</span>
+    <span class="nx">renderFieldAs</span>: <span class="kt">IPropertyFieldRenderOption</span><span class="p">[</span><span class="s2">&quot;Multiselect Dropdown&quot;</span><span class="p">]</span>
+<span class="p">})</span>
 </code></pre></div>
 
 <h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
@@ -1148,7 +1168,7 @@
 </tr>
 <tr>
 <td>context</td>
-<td>WebPartContext</td>
+<td>BaseComponentContext</td>
 <td>yes</td>
 <td>Context of the current web part.</td>
 </tr>
@@ -1236,6 +1256,12 @@
 <td>no</td>
 <td>Property to be returned for the selected column(s).</td>
 </tr>
+<tr>
+<td>renderFieldAs</td>
+<td>IPropertyFieldRenderOption</td>
+<td>no</td>
+<td>Property to render the control as <code>Choice group</code> or <code>Multiselect Dropdown</code>. This is applicable only if the multiselect is <code>true</code>. By default the control will be displayed as <code>Choice Group</code></td>
+</tr>
 </tbody>
 </table>
 <p>Enum <code>PropertyFieldColumnPickerOrderBy</code></p>
@@ -1280,6 +1306,11 @@
 </tr>
 </tbody>
 </table>
+<p>Enum <code>IPropertyFieldRenderOption</code>
+| Name | Description |
+| ---- | ---- |
+| Choice Group | Render the control as multi-select checkbox list
+| Multiselect Dropdown | Render the control as multi-select dropdown</p>
 <p><img alt="" src="https://telemetry.sharepointpnp.com/sp-dev-fx-property-controls/wiki/PropertyFieldColumnPicker" /></p>
                 
                   

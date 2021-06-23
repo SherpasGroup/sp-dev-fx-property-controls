@@ -1098,13 +1098,15 @@
                 
                 <h1 id="propertyfieldfilepicker-control">PropertyFieldFilePicker control<a class="headerlink" href="#propertyfieldfilepicker-control" title="Permanent link">&para;</a></h1>
 <p>File picker control allows to browse and select a file from various places via the property pane.
-Currently supported locations
-- Recent files - tab allows to select a file from recently modified files based on the search results.
-- Web search - tab uses Bing cognitive services to look for a file. (Only images)
-- OneDrive - tab allows to select a file from the user's One Drive.
-- Site document libraries - tab allows to select a file from the existing site document libraries.
-- Upload - tab allows to upload a file from local drive.
-- From a link - tab allows to paste a link to the document.</p>
+Currently supported locations</p>
+<ul>
+<li>Recent files - tab allows to select a file from recently modified files based on the search results.</li>
+<li>Web search - tab uses Bing cognitive services to look for a file. (Only images)</li>
+<li>OneDrive - tab allows to select a file from the user's One Drive.</li>
+<li>Site document libraries - tab allows to select a file from the existing site document libraries.</li>
+<li>Upload - tab allows to upload a file from local drive.</li>
+<li>From a link - tab allows to paste a link to the document.</li>
+</ul>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>The control supports all types of file, however it also allows to specify list of extensions for the files that are going to be looked displayed. Currently, only single file selection is supported. 
 <img alt="File Picker overview" src="../assets/FilePickerOverview.png" /></p>
@@ -1175,7 +1177,7 @@ Currently supported locations
 </tr>
 <tr>
 <td>context</td>
-<td>WebPartContext</td>
+<td>BaseComponentContext</td>
 <td>yes</td>
 <td>Current webpart context.</td>
 </tr>

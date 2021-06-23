@@ -36,7 +36,7 @@
     
     
       
-        <title>Project guides - @pnp/spfx-property-controls</title>
+        <title>PropertyPaneHelpers - @pnp/spfx-property-controls</title>
       
     
     
@@ -101,7 +101,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#project-guides" tabindex="1" class="md-skip">
+      <a href="#propertypanehelpers" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -127,7 +127,7 @@
                 @pnp/spfx-property-controls
               </span>
               <span class="md-header-nav__topic">
-                Project guides
+                PropertyPaneHelpers
               </span>
             
           
@@ -199,14 +199,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../index.html" title="Home" class="md-tabs__link md-tabs__link--active">
+      <a href="../index.html" title="Home" class="md-tabs__link">
         Home
       </a>
     
@@ -244,7 +246,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../helpers/PropertyPaneHelpers.html" title="Helpers" class="md-tabs__link">
+        <a href="PropertyPaneHelpers.html" title="Helpers" class="md-tabs__link md-tabs__link--active">
           Helpers
         </a>
       
@@ -834,10 +836,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Helpers
@@ -853,11 +857,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../helpers/PropertyPaneHelpers.html" title="PropertyPaneHelpers" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        PropertyPaneHelpers
+      </label>
+    
+    <a href="PropertyPaneHelpers.html" title="PropertyPaneHelpers" class="md-nav__link md-nav__link--active">
       PropertyPaneHelpers
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-control-in-your-solutions" title="How to use this control in your solutions" class="md-nav__link">
+    How to use this control in your solutions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" title="Implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -932,7 +981,7 @@
 
 
   <li class="md-nav__item">
-    <a href="." title="Project Guides" class="md-nav__link">
+    <a href="../guides" title="Project Guides" class="md-nav__link">
       Project Guides
     </a>
   </li>
@@ -955,6 +1004,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-control-in-your-solutions" title="How to use this control in your solutions" class="md-nav__link">
+    How to use this control in your solutions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" title="Implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -965,18 +1037,79 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/pnp/sp-dev-fx-property-controls/blob/master/docs/documentation/docs/guides/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/pnp/sp-dev-fx-property-controls/blob/master/docs/documentation/docs/helpers/PropertyPaneHelpers.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="project-guides">Project guides<a class="headerlink" href="#project-guides" title="Permanent link">&para;</a></h1>
-<p>Following is an overview of guides for this project. If you're considering contributing to the project, reading up on these guides will help you understand the project structure and get started developing for it.</p>
-<ul>
-<li><a href="contributing.html">Contributing</a> - how you can contribute to the project</li>
-<li><a href="mpa.html">Minimal Path to Awesome</a> - setup your development environment</li>
-<li><a href="submitting-pr.html">Submitting a PR</a> - how to submit a PR</li>
-<li><a href="migrate-from-v1.html">Migrating from V1</a> - how to migrate from v1</li>
-</ul>
-<p><img alt="" src="https://telemetry.sharepointpnp.com/sp-dev-fx-property-controls/wiki/guides" /></p>
+                <h1 id="propertypanehelpers">PropertyPaneHelpers<a class="headerlink" href="#propertypanehelpers" title="Permanent link">&para;</a></h1>
+<p>These are helpers to interact with the property pane of the web part. Currently this helper allows you to show a spinner when the property pane is loading resources. This could be loading controls, fetching data, ... Normally you would get a white property pane until all data is loaded.</p>
+<h2 id="how-to-use-this-control-in-your-solutions">How to use this control in your solutions<a class="headerlink" href="#how-to-use-this-control-in-your-solutions" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../#getting-started">getting started</a> page for more information about installing the dependency.</li>
+<li>Import the following modules to your main web part TypeScript file:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="k">import</span> <span class="p">{</span> <span class="nx">PropertyPaneHelpers</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">&#39;@pnp/spfx-property-controls/lib/helpers&#39;</span><span class="p">;</span>
+</code></pre></div>
+
+<ol>
+<li>You can use the following example to add the spinner to your web part property pane:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * Load property pane resources</span>
+<span class="cm"> */</span>
+<span class="k">protected</span> <span class="k">async</span> <span class="nx">loadPropertyPaneResources</span><span class="p">()</span><span class="o">:</span> <span class="nx">Promise</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="nx">PropertyPaneHelpers</span><span class="p">.</span><span class="nx">setSpinner</span><span class="p">({</span>
+    <span class="nx">bgColor</span><span class="o">:</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span>
+    <span class="nx">spinnerProps</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">getStyles</span><span class="o">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">{</span>
+          <span class="nx">circle</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">height</span>: <span class="kt">80</span><span class="p">,</span>
+            <span class="nx">width</span>: <span class="kt">80</span>
+          <span class="p">}</span>
+        <span class="p">};</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+
+  <span class="c1">// Write here the code you want to add to load your resources</span>
+
+  <span class="nx">PropertyPaneHelpers</span><span class="p">.</span><span class="nx">clearSpinner</span><span class="p">(</span><span class="mf">200</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
+<p>The <code>setSpinner</code> method allows you to set the following properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bgColor</td>
+<td>string</td>
+<td>no</td>
+<td>Spinner background color</td>
+</tr>
+<tr>
+<td>className</td>
+<td>string</td>
+<td>no</td>
+<td>Class name to style the spinner yourself.</td>
+</tr>
+<tr>
+<td>spinnerProps</td>
+<td>ISpinnerProps</td>
+<td>no</td>
+<td>Spinner properties from Office UI Fabric.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="https://telemetry.sharepointpnp.com/sp-dev-fx-property-controls/wiki/PropertyPaneHelpers" /></p>
                 
                   
                 
@@ -993,6 +1126,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../controls/PropertyFieldToggleWithCallout.html" title="PropertyFieldToggleWithCallout" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                PropertyFieldToggleWithCallout
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../beta.html" title="Beta testing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Beta testing
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
